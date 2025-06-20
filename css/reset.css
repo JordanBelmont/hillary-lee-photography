@@ -25,6 +25,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
    line-height: 1;
+   background-color: #2e2e2e;
 }
 
 ol, ul {
