@@ -1,0 +1,73 @@
+/* * IPHONE * */
+
+.bio-display {
+   margin: 1.8rem 20rem;
+   display: flex;
+   justify-content: space-between;
+}
+
+.bio-card {
+   padding: 20px;
+   margin-bottom: 1.25rem;
+   box-shadow: 10px 10px;
+   background-color: #dfdfdf;
+   border-radius: 0.3rem;
+}
+
+.bio-window {
+   width:
+}
+
+.bio-background {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 28%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-image: url("../images/20250602\ 02\ Metro\ Hopper\ -\ Website.jpg")
+}
+
+.bio-heading {
+   margin-top: 0.9rem;
+   font-family: 'Nasal';
+   font-size: 1.25rem;
+   font-weight: bold;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .bio-background-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 21.3%;
+      background-size: cover;
+      background-repeat: no-repeat;
+   }
+
+   .code-card {
+      margin-bottom: 0;
+      max-height: 100%;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+
+   .code-background-1,
+   .code-background-2,
+   .code-background-3,
+   .code-background-4,
+   .code-background-5,
+   .code-background-6,
+   .code-background-7 {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+}
