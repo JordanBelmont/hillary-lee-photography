@@ -1,0 +1,9 @@
+body {
+   height: 100vh;
+   width: 100vw;
+   min-height: 100vh;
+   background-image: url(../images/Artboard\ 1.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
