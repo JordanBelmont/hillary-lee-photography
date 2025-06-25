@@ -1,0 +1,25 @@
+.background {
+   height: 100vh;
+   width: 100vw;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.home {
+   background-image: url(../images/Artboard\ 1.png);
+}
+
+.portfolio {
+   background-image: url(../images/Artboard\ 1.png);
+}
+
+.bio {
+   background-image: url(../images/Artboard\ 1.png);
+}
+
+.shop {
+   background-image: url(../images/Artboard\ 1.png);
+}

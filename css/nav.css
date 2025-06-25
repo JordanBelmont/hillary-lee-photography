@@ -13,7 +13,7 @@ header {
 
 li a {
    display: inline-block;
-   color: #d5d7d8;
+   color: var(--dark);
    font-family: 'Jost';
    font-size: 2rem;
    letter-spacing: 0.125rem;
@@ -23,13 +23,13 @@ li a {
 
 li a:hover,
 li a:focus {
-   color: #ffffff;
+   color: var(--light);
    transition: .5s ease-in-out;
 }
 
 /* BURGER */
 
-.burger-button {
+/* .burger-button {
    position: absolute;
    left: 2rem;
    top: 1.16rem;
@@ -76,4 +76,4 @@ li a:focus {
    stroke-dasharray: 90 207;
    stroke-dashoffset: -134;
    stroke-width: 6;
-}
+} */
