@@ -4,7 +4,7 @@ header {
    position: sticky;
    text-align: left;
    display: flex;
-   padding: 3rem;
+   padding: 3rem 3rem 1rem 3rem;
 }
 
 .logo {
@@ -13,7 +13,6 @@ header {
 
 li a {
    display: inline-block;
-   color: var(--dark);
    font-family: 'Jost';
    font-size: 2rem;
    letter-spacing: 0.125rem;
@@ -21,9 +20,23 @@ li a {
    margin: 0 0 3.5rem 5rem;
 }
 
-li a:hover,
-li a:focus {
+.light-link {
    color: var(--light);
+}
+
+.dark-link {
+   color: var(--dark);
+}
+
+.dark-link:hover,
+.dark-link:focus {
+   color: var(--light);
+   transition: .5s ease-in-out;
+}
+
+.light-link:hover,
+.light-link:focus {
+   color: var(--dark);
    transition: .5s ease-in-out;
 }
 

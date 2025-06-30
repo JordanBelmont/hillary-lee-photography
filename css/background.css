@@ -15,14 +15,15 @@ body {
 
 .home {
    background-image: url(../images/hero.png);
+   height: 100%;
 }
 
 .portfolio {
-   background-image: url(../images/Artboard\ 1.png);
+   background-image: url(../images/background-portfolio.png);
 }
 
 .bio {
-   background-image: url(../images/Artboard\ 1.png);
+   background-image: url(../images/background-bio.png);
 }
 
 .shop {

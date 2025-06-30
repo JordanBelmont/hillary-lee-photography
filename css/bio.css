@@ -1,69 +1,73 @@
-/* * IPHONE * */
-
-.bio-display {
-   margin: 1.8rem 20rem;
-   display: flex;
-   justify-content: space-between;
+.profile {
+   width: 50%;
+   margin: 2rem;
+   padding: 2rem;
+   color: var(--dark);
+   line-height: 2rem;
 }
 
-.bio-card {
-   padding: 20px;
-   margin-bottom: 1.25rem;
-   box-shadow: 10px 10px;
-   background-color: #dfdfdf;
-   border-radius: 0.3rem;
+.contact-container {
+   margin-top: 2rem;
 }
 
-.bio-background {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   padding: 28%;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-image: url("../images/20250602\ 02\ Metro\ Hopper\ -\ Website.jpg")
-}
-
-.bio-heading {
-   margin-top: 0.9rem;
-   font-family: 'Nasal';
-   font-size: 1.25rem;
+.contact-label {
+   display: block;
    font-weight: bold;
+   font-family: 'Jost';
+   letter-spacing: 0.5rem;
+}
+
+.address,
+.message {
+   margin-top: 1.25rem;
+}
+
+.contact-input,
+.contact-textarea {
+   display: block;
+   width: 100%;
+   padding: 1%;
+   border: 0.1rem solid var(--dark);
+   border-radius: 0.3rem;
+   background-color: var(--light);
+   font-family: monospace;
+   font-size: 1.25rem;
+   letter-spacing: 0.06rem;
+   resize: none;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+   border: 0.1rem solid var(--dark);
+   border-radius: 0.3rem;
+   outline: none;
+}
+
+.submit-container {
+   text-align: center;
+   margin-top: 1.25rem;
+}
+
+.submit-button {
+   padding: 0.6rem;
+   border: 0.1rem solid var(--dark);
+   border-radius: 0.3rem;
+   font-weight: bold;
+   font-family: 'Jost';
+   font-size: 1.1rem;
    letter-spacing: 0.1rem;
-   text-transform: uppercase;
+   color: var(--dark);
+   background: none;
+   background-color: var(--light);
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
-
-   .bio-background-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 21.3%;
-      background-size: cover;
-      background-repeat: no-repeat;
-   }
-
-   .code-card {
-      margin-bottom: 0;
-      max-height: 100%;
-   }
+.submit-button:hover {
+   cursor: pointer;
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
-
-   .code-background-1,
-   .code-background-2,
-   .code-background-3,
-   .code-background-4,
-   .code-background-5,
-   .code-background-6,
-   .code-background-7 {
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-   }
+.submit-button:focus {
+   border-radius: 0.3rem;
+   outline: none;
+   color: var(--light);
+   background-color: var(--dark);
 }

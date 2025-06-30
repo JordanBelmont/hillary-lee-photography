@@ -19,25 +19,30 @@
          href="icons/favicon/apple-touch-icon.png" />
    <link rel="stylesheet"
          href="css/style.css" />
-   <title>Hillary Lee Photography</title>
+   <title>Hillary Lee Photography - Bio</title>
 </head>
 
 <body>
-   <div class="portfolio-background">
+   <div class="background bio">
+      <div class="watermark">
+         <img class="watermark"
+              src="images/watermark-grey.png"
+              alt="watermark">
+      </div>
       <header>
          <!-- Logo -->
          <a href="./index.html"
             class="logo-link">
             <img class="logo"
-                 src="images/hlp-logo.png"
+                 src="images/hlp-logo-dark.png"
                  alt="logo">
          </a>
 
-         <!-- Burger -->
+         <!-- Burger
          <div class="burger-container">
             <input type="checkbox"
-                   id="burgerButton"
-                   class="burger-checkbox visually-hidden">
+                  id="burgerButton"
+                  class="burger-checkbox visually-hidden">
             <label for="burgerButton">
                <div class="burger">
                   <span class="burger-bar bar1"></span>
@@ -46,58 +51,134 @@
                   <span class="burger-bar bar4"></span>
                </div>
             </label>
-         </div>
+         </div> -->
 
          <!-- Nav -->
          <div class="nav-container">
             <nav>
                <ul>
                   <li>
-                     <a href=""
-                        class="portfolio-link">
+                     <a href="/portfolio.html"
+                        class="portfolio-link dark-link">
                         Portfolio
                      </a>
                   </li>
                   <li>
-                     <a href=""
-                        class="blog-link">
+                     <a href="/blog.html"
+                        class="blog-link dark-link">
                         Blog
                      </a>
                   </li>
                   <li>
-                     <a href=""
-                        class="bio-link">Bio
+                     <a href="/shop.html"
+                        class="shop-link dark-link">
+                        Shop
                      </a>
                   </li>
                   <li>
-                     <a href=""
-                        class="contact-link">
-                        Contact
+                     <a href="/bio.html"
+                        class="bio-link dark-link">
+                        Bio / Contact
                      </a>
                   </li>
                </ul>
             </nav>
          </div>
       </header>
-
-      <div class="bio-display">
-         <div class="bio-stats">
-            <h1 class="bio-title">Abattoir Inc.</h1>
-            <br>
-            <h2 class="bio-heading">Function</h2>
-            <p class="bio-stats">Responsive Webpage</p>
-            <br>
-            <h2 class="bio-heading">Languages</h2>
-            <p class="bio-stats">HTML / SCSS</p>
-         </div>
-         <div class="bio-card">
-            <div class="bio-window">
-               <div class="bio-background"></div>
-            </div>
+      <div class="profile">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, exercitationem. Non quos aliquid
+            excepturi nam
+            est sint qui molestiae quibusdam ad! Consequatur optio nemo, dicta eligendi excepturi temporibus tenetur
+            incidunt veritatis quod dolore molestias atque voluptatum necessitatibus obcaecati ratione vel in expedita
+            culpa ipsum error quisquam quibusdam ipsa? Earum commodi accusamus rem, necessitatibus assumenda enim eius
+            corporis numquam totam dignissimos quisquam animi beatae vel illo nulla voluptatem quae voluptatibus
+            quibusdam.
+            Dicta ipsum debitis quos! Rerum quis, aliquid in fugiat error veniam, cumque repudiandae, ad amet iusto
+            dicta
+            totam quibusdam quidem enim officiis. Nisi temporibus, nulla repellendus pariatur cupiditate aut aperiam!
+         </p>
+         <div class="contact-container">
+            <form class="contact-form"
+                  id="contactForm"
+                  method="POST"
+                  action="/php/contact-form.php">
+               <label class="contact-label full-name"
+                      for="inputname">FULL NAME</label>
+               <input class="contact-input"
+                      id="inputName"
+                      type="text"
+                      name="name"
+                      required>
+               <label class="contact-label address"
+                      for="inputemail">E-MAIL ADDRESS</label>
+               <input class="contact-input"
+                      id="inputEmail"
+                      type="email"
+                      name="email"
+                      required>
+               <label class="contact-label message"
+                      for="message">MESSAGE</label>
+               <textarea class="contact-textarea"
+                         id="inputMessage"
+                         name="message"
+                         rows="5"
+                         cols="33"
+                         required></textarea>
+               <div class="submit-container">
+                  <input class="submit-button"
+                         id="inputSubmit"
+                         type="submit"
+                         value="SEND">
+               </div>
+            </form>
          </div>
       </div>
    </div>
-
 </body>
+<footer>
+   <section class="foot-container">
+      <a href="https://twitter.com/BitterPillProd2"
+         target="_blank"
+         class="foot-link">
+         <img class="foot-icon"
+              src="icons/twitter.png"
+              alt="x icon"
+              title="X">
+      </a>
+      <a href="https://www.instagram.com/bitterpillproductions"
+         target="_blank"
+         class="foot-link">
+         <img class="foot-icon"
+              src="icons/instagram.png"
+              alt="instagram icon"
+              title="Instagram">
+      </a>
+      <!-- <a href="https://www.linkedin.com/bitterpillproductions"
+         target="_blank"
+         class="foot-link">
+         <img class="foot-icon"
+              src="icons/linkedin.png"
+              alt="linkedin icon"
+              title="LinkedIn">
+      </a> -->
+      <a href="https://www.instagram.com/bitterpillproductions"
+         target="_blank"
+         class="foot-link">
+         <img class="foot-icon"
+              src="icons/pinterest.png"
+              alt="pinterest icon"
+              title="Pinterest">
+      </a>
+      <a href="https://www.instagram.com/bitterpillproductions"
+         target="_blank"
+         class="foot-link">
+         <img class="foot-icon"
+              src="icons/flickr.png"
+              alt="flickr icon"
+              title="Flickr">
+      </a>
+   </section>
+   <p class="foot-copyright foot-dark">&copy;2025 - HILLARY LEE PHOTOGRAPHY</p>
+</footer>
 
 </html>

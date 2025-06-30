@@ -16,6 +16,7 @@ footer {
 .foot-icon {
    width: 4rem;
    margin: 0 2rem;
+   opacity: 0.8;
 }
 
 .foot-icon:hover,
@@ -24,10 +25,17 @@ footer {
    transition: .5s ease-in-out;
 }
 
-.foot-license {
+.foot-copyright {
    margin-top: 1rem;
-   color: var(--light);
    letter-spacing: 0.5rem;
+}
+
+.foot-dark {
+   color: var(--dark);
+}
+
+.foot-light {
+   color: var(--light);
 }
 
 .watermark {
