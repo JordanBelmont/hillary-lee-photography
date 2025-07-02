@@ -2,22 +2,24 @@
 
 header {
    position: sticky;
+   top: 0;
    text-align: left;
    display: flex;
    padding: 3rem 3rem 1rem 3rem;
+   z-index: 1;
 }
 
 .logo {
-   width: 16rem;
+   width: 12rem;
 }
 
 li a {
    display: inline-block;
    font-family: 'Jost';
-   font-size: 2rem;
+   font-size: 1.5rem;
    letter-spacing: 0.125rem;
    text-decoration: none;
-   margin: 0 0 3.5rem 5rem;
+   margin: 0 0 2.5rem 5rem;
 }
 
 .light-link {
