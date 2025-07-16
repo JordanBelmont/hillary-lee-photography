@@ -21,6 +21,10 @@ body {
    background-image: url(../images/background-portfolio.png);
 }
 
+.blog {
+   background-image: url(../images/background-blog.png);
+}
+
 .bio {
    background-image: url(../images/background-bio.png);
 }

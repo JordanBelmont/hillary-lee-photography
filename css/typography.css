@@ -4,3 +4,10 @@
    font-display: swap;
    src: url('../fonts/Jost-VariableFont_wght.ttf') format('truetype')
 }
+
+@font-face {
+   font-family: 'Handwriting';
+   font-weight: normal;
+   font-display: swap;
+   src: url('../fonts/TF-Handwriting.ttf') format('truetype')
+}
