@@ -1,11 +1,4 @@
-body {
-   height: 100vh;
-   width: 100vw;
-   min-height: 100vh;
-}
-
 .background {
-   width: 100vw;
    min-height: 100vh;
    background-size: cover;
    background-position: center;
@@ -14,7 +7,6 @@ body {
 
 .home {
    background-image: url(../images/hero.png);
-   height: 100vh;
 }
 
 .portfolio {

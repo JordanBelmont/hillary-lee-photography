@@ -1,9 +1,9 @@
 footer {
-   padding: 20px;
-   text-align: center;
    position: fixed;
    bottom: 0;
    width: 100%;
+   padding: 1rem;
+   text-align: center;
 }
 
 .foot-container,

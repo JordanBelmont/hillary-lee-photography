@@ -3,20 +3,57 @@
    display: none;
    position: fixed;
    top: 0;
+   left: 0;
    width: 100%;
    height: 100%;
+   background: rgba(0, 0, 0, 0.8);
+   align-items: center;
+   justify-content: flex-start;
+   padding: 2rem;
    background-color: rgba(0, 0, 0, 0.9);
 }
 
 #lightbox.active {
    display: flex;
-   flex-direction: row;
+}
+
+.lightbox-image-container {
+   width: 50%;
+   max-width: 50vw;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 2rem;
+}
+
+.lightbox-image-container img {
+   width: 100%;
+   height: auto;
+   max-height: 90vh;
+   object-fit: contain;
+}
+
+.lightbox-text-container {
+   width: 50%;
+   max-width: 50vw;
+   padding: 2rem;
+   color: var(--light);
+   font-family: 'Jost';
+   letter-spacing: 0.125rem;
+   display: flex;
+   flex-direction: column;
+   /* Stack title and description vertically */
    justify-content: center;
+   /* Center vertically */
+   gap: 1rem;
+   /* Space between title and description */
    align-items: center;
 }
 
-#lightbox img {
-   max-width: 95%;
-   max-height: 95%;
-   padding: 0.25rem;
+.lightbox-text-container h2 {
+   font-size: 2rem;
+}
+
+.lightbox-text-container p {
+   margin: 3rem;
 }
