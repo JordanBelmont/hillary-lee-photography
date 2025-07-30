@@ -100,3 +100,17 @@ window.addEventListener('keyup', e => {
       lightbox.classList.remove('active');
    }
 });
+
+function scrollToTop() {
+   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Show/hide button based on scroll position
+window.addEventListener('scroll', function () {
+   const button = document.querySelector('.top-button');
+   if (window.scrollY > 100) { // Show button after scrolling 200px
+      button.classList.add('show');
+   } else {
+      button.classList.remove('show');
+   }
+});

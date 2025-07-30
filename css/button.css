@@ -1,0 +1,13 @@
+.top-button {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   cursor: pointer;
+   display: none;
+   background: none;
+   border: none;
+}
+
+.show {
+   display: block;
+}
