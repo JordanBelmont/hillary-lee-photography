@@ -6,8 +6,8 @@
 }
 
 @font-face {
-   font-family: 'Handwriting';
+   font-family: 'BadScript';
    font-weight: normal;
    font-display: swap;
-   src: url('../fonts/TF-Handwriting.ttf') format('truetype')
+   src: url('../fonts/BadScript-Regular.ttf') format('truetype')
 }

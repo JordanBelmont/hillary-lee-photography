@@ -1,7 +1,7 @@
 .blog-display {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(5, auto);
+   grid-template-rows: repeat(3, auto);
    gap: 5rem;
    justify-items: center;
    margin: 3rem;
@@ -37,7 +37,8 @@
 }
 
 .card-title {
-   margin-top: 30px;
-   font-family: 'Handwriting';
-   font-size: 4rem;
+   margin-top: 3rem;
+   font-family: 'BadScript';
+   font-size: 3rem;
+   letter-spacing: 0.125rem;
 }

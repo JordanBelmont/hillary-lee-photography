@@ -6,6 +6,10 @@ footer {
    text-align: center;
 }
 
+.footer-static {
+   position: static;
+}
+
 .foot-container,
 .icon-container {
    display: flex;

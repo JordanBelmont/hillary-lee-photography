@@ -85,7 +85,6 @@ images.forEach(image => {
          // Append both to lightbox
          lightbox.appendChild(imgContainer)
          lightbox.appendChild(textContainer)
-         lightbox.appendChild(cooContainer)
       }
    })
 });
