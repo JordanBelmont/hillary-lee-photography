@@ -50,3 +50,7 @@
 .image-wrapper:hover .image-title {
    opacity: 1;
 }
+
+.image-coordinates {
+   display: none;
+}
