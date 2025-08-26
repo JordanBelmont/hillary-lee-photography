@@ -1,107 +1,166 @@
-header {
-   /* position: sticky; */
-   /* top: 0; */
-   /* text-align: left; */
-   display: flex;
-   padding: 3rem 3rem 1rem 3rem;
-   z-index: 1;
-}
+   header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      z-index: 1;
+   }
 
-nav {
-   display: flex;
-}
+   .logo {
+      width: 10rem;
+   }
 
-.logo {
-   width: 12rem;
-}
+   nav {
+      display: none;
+   }
 
-nav ul {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   padding: 0 0 0 3rem;
-   height: 100%;
-}
+   .light-link {
+      color: var(--light);
+   }
 
-nav li {
-   padding: 0 0 0 1.5rem;
-}
+   .dark-link {
+      color: var(--dark);
+   }
 
-nav li a {
-   font-family: 'Jost';
-   font-size: 1.5rem;
-   letter-spacing: 0.125rem;
-   text-decoration: none;
-   margin: 0;
-}
+   .dark-link:hover,
+   .dark-link:focus {
+      color: var(--light);
+      transition: .5s ease-in-out;
+   }
 
-.light-link {
-   color: var(--light);
-}
+   .light-link:hover,
+   .light-link:focus {
+      color: var(--dark);
+      transition: .5s ease-in-out;
+   }
 
-.dark-link {
-   color: var(--dark);
-}
+   .nav-ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      list-style: none;
+   }
 
-.dark-link:hover,
-.dark-link:focus {
-   color: var(--light);
-   transition: .5s ease-in-out;
-}
+   .nav-li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 5rem;
+   }
 
-.light-link:hover,
-.light-link:focus {
-   color: var(--dark);
-   transition: .5s ease-in-out;
-}
+   .nav-link {
+      font-family: 'Jost';
+      font-size: 1.5rem;
+      text-decoration: none;
+      letter-spacing: 0.125rem;
+   }
 
-/* BURGER */
+   /* BURGER */
 
-/* .burger-button {
-   position: absolute;
-   left: 2rem;
-   top: 1.16rem;
-   border: none;
-   background: none;
-   outline: none;
-}
+   .burger-button {
+      margin-top: 1rem;
+      border: none;
+      background: none;
+      outline: none;
+   }
 
-.line {
-   fill: none;
-   stroke: black;
-   stroke-width: 6;
-   transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+   .line-light {
+      fill: none;
+      stroke: var(--light);
+      stroke-width: 4;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
 
-.line1 {
-   stroke-dasharray: 60 207;
-   stroke-width: 6;
-}
+   .line-dark {
+      fill: none;
+      stroke: var(--dark);
+      stroke-width: 4;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
 
-.line2 {
-   stroke-dasharray: 60 60;
-   stroke-width: 6;
-}
+   .line1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 4;
+   }
 
-.line3 {
-   stroke-dasharray: 60 207;
-   stroke-width: 6;
-}
+   .line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 4;
+   }
 
-.opened .line1 {
-   stroke-dasharray: 90 207;
-   stroke-dashoffset: -134;
-   stroke-width: 6;
-}
+   .line3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 4;
+   }
 
-.opened .line2 {
-   stroke-dasharray: 1 60;
-   stroke-dashoffset: -30;
-   stroke-width: 6;
-}
+   .opened .line1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 4;
+   }
 
-.opened .line3 {
-   stroke-dasharray: 90 207;
-   stroke-dashoffset: -134;
-   stroke-width: 6;
-} */
+   .opened .line2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 4;
+   }
+
+   .opened .line3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 4;
+   }
+
+   /* * IPAD * */
+   @media only screen and (min-width: 768px) {
+
+      header {
+         display: flex;
+         align-items: normal;
+         flex-direction: row;
+         padding: 3rem 3rem 1rem 3rem;
+         z-index: 1;
+      }
+
+      .logo {
+         position: relative;
+         left: 0;
+         top: 0;
+         width: 12rem;
+      }
+
+      nav {
+         display: flex;
+      }
+
+      .nav-ul {
+         position: relative;
+         right: 0rem;
+         top: 0rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         padding: 0 0 0 3rem;
+         height: 95%;
+      }
+
+      .nav-li {
+         display: flex;
+         align-items: center;
+         justify-content: start;
+         height: 2.5rem;
+         padding: 0 0 0 1.5rem;
+      }
+
+      .nav-link {
+         font-family: 'Jost';
+         font-size: 1.5rem;
+         letter-spacing: 0.125rem;
+         text-decoration: none;
+         margin: 0;
+      }
+
+      .burger-button {
+         display: none;
+      }
+   }

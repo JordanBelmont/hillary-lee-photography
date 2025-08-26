@@ -1,6 +1,5 @@
 .profile {
-   width: 50%;
-   margin: 0 2rem 0 2rem;
+   width: 100%;
    padding: 2rem;
    color: var(--dark);
    line-height: 2rem;
@@ -12,6 +11,9 @@
 
 .contact-label {
    display: block;
+   text-align: center;
+   width: auto;
+   ;
    font-weight: bold;
    font-family: 'Jost';
    letter-spacing: 0.5rem;
@@ -65,9 +67,76 @@
    cursor: pointer;
 }
 
-.submit-button:focus {
-   border-radius: 0.3rem;
-   outline: none;
-   color: var(--light);
-   background-color: var(--dark);
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .profile {
+      width: 50%;
+      margin: 0 2rem 0 2rem;
+      padding: 2rem;
+      color: var(--dark);
+      line-height: 2rem;
+   }
+
+   .contact-label {
+      display: block;
+      font-weight: bold;
+      font-family: 'Jost';
+      letter-spacing: 0.5rem;
+   }
+
+   .address,
+   .message {
+      margin-top: 1.25rem;
+   }
+
+   .contact-input,
+   .contact-textarea {
+      display: block;
+      width: 100%;
+      padding: 1%;
+      border: 0.1rem solid var(--dark);
+      border-radius: 0.3rem;
+      background-color: var(--light);
+      font-family: monospace;
+      font-size: 1.25rem;
+      letter-spacing: 0.06rem;
+      resize: none;
+   }
+
+   .contact-input:focus,
+   .contact-textarea:focus {
+      border: 0.1rem solid var(--dark);
+      border-radius: 0.3rem;
+      outline: none;
+   }
+
+   .submit-container {
+      text-align: center;
+      margin-top: 1.25rem;
+   }
+
+   .submit-button {
+      padding: 0.6rem;
+      border: 0.1rem solid var(--dark);
+      border-radius: 0.3rem;
+      font-weight: bold;
+      font-family: 'Jost';
+      font-size: 1.1rem;
+      letter-spacing: 0.1rem;
+      color: var(--dark);
+      background: none;
+      background-color: var(--light);
+   }
+
+   .submit-button:hover {
+      cursor: pointer;
+   }
+
+   .submit-button:focus {
+      border-radius: 0.3rem;
+      outline: none;
+      color: var(--light);
+      background-color: var(--dark);
+   }
 }

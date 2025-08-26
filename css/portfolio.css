@@ -1,56 +1,105 @@
-.gallery {
-   margin: 3rem;
-}
+   .gallery {
+      margin: 1rem 1rem 1rem 1rem;
+   }
 
-.flex-container {
-   max-width: 100%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
+   .flex-container {
+      max-width: 100%;
+      align-items: center;
+   }
 
-.image-wrapper {
-   display: flex;
-   justify-content: space-between;
-   margin: 2rem;
-   position: relative;
-}
+   .image-wrapper {
+      margin: 1rem;
+      position: relative;
+   }
 
-.image-wrapper img {
-   max-width: 50vw;
-   max-height: 70vh;
-   display: block;
-   transition: transform .5s ease-in;
-}
+   .image-wrapper img {
+      max-width: 100%;
+      display: block;
+      padding-bottom: 1rem;
+   }
 
-.image-wrapper img:hover {
-   filter: brightness(25%);
-   cursor: pointer;
-   opacity: 1;
-   transition: .5s ease-in-out;
-}
+   .image-title {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-family: 'Jost';
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 0.25rem;
+      color: var(--light);
+      opacity: 0;
+      transform: translate(-50%, -50%);
+      transition: .3s ease-in-out;
+   }
 
-.image-title {
-   z-index: 1;
-   display: block;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   text-align: center;
-   font-family: 'Jost';
-   font-size: 1.5rem;
-   font-weight: bold;
-   letter-spacing: 0.25rem;
-   color: var(--light);
-   opacity: 0;
-   transform: translate(-50%, -50%);
-   transition: .3s ease-in-out;
-}
+   .image-wrapper:hover .image-title {
+      opacity: 1;
+   }
 
-.image-wrapper:hover .image-title {
-   opacity: 1;
-}
+   .image-coordinates {
+      display: none;
+   }
 
-.image-coordinates {
-   display: none;
-}
+   /* * IPAD * */
+   @media only screen and (min-width: 768px) {
+      .gallery {
+         margin: 3rem;
+      }
+
+      .flex-container {
+         max-width: 100%;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+      }
+
+      .image-wrapper {
+         display: flex;
+         justify-content: space-between;
+         margin: 2rem;
+         position: relative;
+      }
+
+      .image-wrapper img {
+         max-width: 100%;
+         max-height: 70vh;
+         padding-bottom: 0rem;
+         display: block;
+         transition: transform .5s ease-in;
+      }
+
+      .image-wrapper img:hover {
+         filter: brightness(25%);
+         cursor: pointer;
+         opacity: 1;
+         transition: .5s ease-in-out;
+      }
+
+      .image-title {
+         z-index: 1;
+         display: block;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         text-align: center;
+         font-family: 'Jost';
+         font-size: 1.5rem;
+         font-weight: bold;
+         letter-spacing: 0.25rem;
+         color: var(--light);
+         opacity: 0;
+         transform: translate(-50%, -50%);
+         transition: .3s ease-in-out;
+      }
+
+      .image-wrapper:hover .image-title {
+         opacity: 1;
+      }
+
+      .image-coordinates {
+         display: none;
+      }
+   }
