@@ -21,17 +21,17 @@
          href="css/style.css" />
    <script defer
            src="javascript/script.js"></script>
-   <title>Hillary Lee Photography</title>
+   <title>Hillary Lee Photography - Contact</title>
 </head>
 
 <body>
-   <div class="background home">
+   <div class="background contact">
       <div class="watermark">
          <img class="watermark"
-              src="images/watermark-white.png"
+              src="images/watermark-grey.png"
               alt="watermark">
       </div>
-      <header class="index-header">
+      <header class="contact-header">
          <!-- Logo -->
          <a href="./index.html"
             class="logo-link">
@@ -70,7 +70,68 @@
             </ul>
          </nav>
       </header>
-      <footer class="home-footer">
+      <div class="profile">
+         <p>Hillary Lee is a photographer driven by the search for the next compelling view. Growing up among the
+            monuments of
+            Washington, D.C., the stark geometry of its brutalist metro system, and making regular visits to family in
+            the
+            sharp-peaked landscape of the American Southwest, she developed a deep appreciation for strong lines and
+            bold forms.
+            These themes inform her work across architecture, landscapes, and street photography.
+            <br /><br />
+            Lee's career in video production has led her to produce extensive online photography and videography courses
+            for
+            companies such as LinkedIn Learning, Lynda.com, and Skylum Software. These experiences kept her at the
+            forefront of
+            industry shifts. This includes the transition to mirrorless cameras, the rise of smartphone photography, and
+            the early
+            adoption of AI-driven photo workflows.
+            <br /><br />
+            Recently, her image “Obscured,” earned her an Honorable Mention from The Berlin Photo Awards. It captures
+            the Washington
+            Monument emerging from dense fog and her ability to find cinematic compositions.
+            <br /><br />
+            In her spare time, you can find Hillary embroidering, in search of the best crab cake sandwich, rewatching
+            shows from
+            the NBC comedy lineup in the 2010s, or at a museum.
+         </p>
+         <div class="contact-container">
+            <form class="contact-form"
+                  id="contactForm"
+                  method="POST"
+                  action="/php/contact-form.php">
+               <label class="contact-label full-name"
+                      for="inputname">FULL NAME</label>
+               <input class="contact-input"
+                      id="inputName"
+                      type="text"
+                      name="name"
+                      required>
+               <label class="contact-label address"
+                      for="inputemail">E-MAIL ADDRESS</label>
+               <input class="contact-input"
+                      id="inputEmail"
+                      type="email"
+                      name="email"
+                      required>
+               <label class="contact-label message"
+                      for="message">MESSAGE</label>
+               <textarea class="contact-textarea"
+                         id="inputMessage"
+                         name="message"
+                         rows="5"
+                         cols="33"
+                         required></textarea>
+               <div class="submit-container">
+                  <input class="submit-button"
+                         id="inputSubmit"
+                         type="submit"
+                         value="SEND">
+               </div>
+            </form>
+         </div>
+      </div>
+      <footer class="">
          <section class="foot-container">
             <a href="https://x.com/hilleephoto"
                target="_blank"
@@ -97,7 +158,7 @@
                     title="Pinterest">
             </a>
          </section>
-         <p class="foot-copyright foot-light">&copy;2025 - HILLARY LEE PHOTOGRAPHY</p>
+         <p class="foot-copyright foot-dark">&copy;2025 - HILLARY LEE PHOTOGRAPHY</p>
       </footer>
    </div>
 </body>

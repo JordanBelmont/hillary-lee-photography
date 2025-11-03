@@ -1,0 +1,102 @@
+/* * IPHONE * */
+
+.article-display {
+   margin: 1.2rem;
+}
+
+.article-card {
+   padding: 1.25rem;
+   /* box-shadow: 0 0.1rem 0.4rem -0.06rem hsl(0, 0%, 20%); */
+   color: var(--light);
+   background-color: var(--dark);
+   border-radius: 0.5rem;
+}
+
+.article-title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 1rem 0px 1rem 0px;
+   font-family: 'Jost';
+   font-size: 1.8rem;
+   font-weight: bold;
+   letter-spacing: 0.25rem;
+   pointer-events: none;
+}
+
+.article-text {
+   margin-top: 1.3rem;
+   font-family: 'Jost';
+   font-size: 1.3rem;
+   letter-spacing: 0.1rem;
+   line-height: 1.8rem;
+   pointer-events: none;
+}
+
+.back-container {
+   text-align: right;
+   margin-top: 3rem;
+}
+
+.back {
+   margin-top: 0.9rem;
+   font-family: 'Jost';
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 0.1rem;
+   color: var(--light);
+}
+
+.back:hover,
+.back:focus {
+   color: black;
+   transition: .3s ease-in-out;
+}
+
+.article-figure {
+   text-align: center;
+}
+
+.article-image {
+   margin: 1.8rem 0 1.8rem 0;
+   width: 100%;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .article-display {
+      margin: 1.8rem 10%;
+   }
+
+   .article-card {
+      padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+   }
+
+   .article-intro,
+   .article-text {
+      margin: 1rem 2rem;
+   }
+
+   .article-image {
+      width: 100%;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+
+   .article-display {
+      margin: 1.8rem 15%;
+   }
+}
+
+/* * IMAC * */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
+   .article-display {
+      margin: 1.8rem 25%;
+   }
+}

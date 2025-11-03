@@ -1,6 +1,5 @@
 .background {
    background-repeat: repeat;
-   /* background-size: ; */
 }
 
 .home {
@@ -21,8 +20,8 @@
    background-image: url(../images/background-blogs.png);
 }
 
-.bio {
-   background-image: url(../images/background-bio.png);
+.contact {
+   background-image: url(../images/background-contact.png);
 }
 
 .shop {
