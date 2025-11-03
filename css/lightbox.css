@@ -45,7 +45,7 @@
    text-align: center;
 }
 
-.lightbox-coordinates-container {
+.lightbox-award-container {
    display: none;
 }
 
@@ -110,7 +110,7 @@
       align-items: center;
    }
 
-   .lightbox-coordinates-container {
+   .lightbox-award-container {
       width: 50%;
       max-width: 50vw;
       padding: 2rem;

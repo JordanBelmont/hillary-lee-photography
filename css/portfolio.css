@@ -39,7 +39,7 @@
       opacity: 1;
    }
 
-   .image-coordinates {
+   .image-award {
       display: none;
    }
 
@@ -99,7 +99,7 @@
          opacity: 1;
       }
 
-      .image-coordinates {
+      .image-award {
          display: none;
       }
    }

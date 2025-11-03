@@ -44,14 +44,14 @@ images.forEach(image => {
       let description = document.createElement('p')
       description.className = 'lightbox-description'
       description.textContent = image.getAttribute('data-description') || 'Image Description'
-      // Add coordinates
-      let coordinates = document.createElement('p')
-      coordinates.className = 'lightbox-coordinates'
-      coordinates.textContent = image.querySelector('.image-coordinates').textContent || 'Image Coordinates'
+      // Add award
+      let award = document.createElement('p')
+      award.className = 'lightbox-award'
+      award.textContent = image.querySelector('.image-award').textContent || 'Image Award'
       // Append title and description to text container
       textContainer.appendChild(title)
       textContainer.appendChild(description)
-      textContainer.appendChild(coordinates)
+      textContainer.appendChild(award)
       // Append both to lightbox
       lightbox.appendChild(imgContainer)
       lightbox.appendChild(textContainer)
@@ -84,14 +84,14 @@ images.forEach(image => {
          let description = document.createElement('p')
          description.className = 'lightbox-description'
          description.textContent = image.getAttribute('data-description') || 'Image Description'
-         // Add coordinates
-         let coordinates = document.createElement('p')
-         coordinates.className = 'lightbox-coordinates'
-         coordinates.textContent = image.querySelector('.image-coordinates').textContent || 'Image Coordinates'
+         // Add award
+         let award = document.createElement('p')
+         award.className = 'lightbox-award'
+         award.textContent = image.querySelector('.image-award').textContent || 'Image Award'
          // Append title and description to text container
          textContainer.appendChild(title)
          textContainer.appendChild(description)
-         textContainer.appendChild(coordinates)
+         textContainer.appendChild(award)
          // Append both to lightbox
          lightbox.appendChild(imgContainer)
          lightbox.appendChild(textContainer)

@@ -4,6 +4,13 @@
       align-items: center;
       padding: 2rem;
       z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+   }
+
+   .bio-header,
+   .index-header {
+      background-color: transparent;
+
    }
 
    .logo {
@@ -120,6 +127,7 @@
          flex-direction: row;
          padding: 3rem 3rem 1rem 3rem;
          z-index: 1;
+         background-color: transparent;
       }
 
       .logo {
