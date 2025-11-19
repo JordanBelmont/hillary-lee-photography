@@ -4,13 +4,6 @@
       align-items: center;
       padding: 2rem;
       z-index: 1;
-      background-color: rgba(0, 0, 0, 0.5);
-   }
-
-   .contact-header,
-   .index-header {
-      background-color: transparent;
-
    }
 
    .logo {

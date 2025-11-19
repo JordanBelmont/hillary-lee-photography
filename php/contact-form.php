@@ -11,7 +11,7 @@
                         "EMAIL ADDRESS: $visitorMail.\n\n".
                            "MESSAGE: \n\n$message.\n\n";
 
-      $to = "jordan.belmont@hotmail.com";
+      $to = "hillaryleephoto@gmail.com";
 
       $headers = "From: $emailFrom \r\n";
 

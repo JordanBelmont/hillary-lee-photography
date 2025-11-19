@@ -1,10 +1,18 @@
 // BURGER
 const nav = document.getElementById('navBurger');
 const burger = document.getElementById('burgerButton');
+const footer = document.getElementById('footer');
 
 burger.addEventListener('click', () => {
    burger.classList.toggle('opened');
-   burger.setAttribute('aria-expanded', nav.classList.contains('nav-ul'));
+
+   // Only check/toggle footer if it exists
+   const footerHasClass = footer ? footer.classList.contains('home.footer') : false;
+   burger.setAttribute('aria-expanded', footerHasClass || nav.classList.contains('nav-ul'));
+
+   if (footer) {
+      footer.classList.toggle('home-footer-2');
+   }
    nav.classList.toggle('nav-ul');
 });
 

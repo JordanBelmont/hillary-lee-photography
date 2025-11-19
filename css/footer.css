@@ -4,15 +4,17 @@ footer {
    width: 100%;
    padding: 1rem;
    text-align: center;
+   position: static;
 }
 
 .home-footer {
-   position: fixed;
-   bottom: 0;
+   display: none;
 }
 
-.footer-static {
-   position: static;
+.home-footer-2 {
+   display: block;
+   position: fixed;
+   bottom: 0;
 }
 
 .foot-container,
@@ -48,6 +50,7 @@ footer {
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
    footer {
+      display: block;
       position: fixed;
       bottom: 0;
       width: 100%;
