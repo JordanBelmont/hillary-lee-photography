@@ -21,7 +21,8 @@
 }
 
 .contact {
-   background-image: url(../images/background-contact.png);
+   background-image: none;
+   background-color: #fff;
 }
 
 .shop {
@@ -35,5 +36,12 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+   }
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 1607px) {
+   .contact {
+      background-image: url(../images/background-contact.png)
    }
 }
