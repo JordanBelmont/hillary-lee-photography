@@ -11,15 +11,15 @@
 }
 
 .portfolio {
-   background-image: url(../images/background-portfolio.png);
+   background-image: url(../images/Background\ -\ Portfolio.png);
 }
 
 .blog {
-   background-image: url(../images/background-blog.png);
+   background-image: url(../images/Background\ -\ Blog.png);
 }
 
 .blogs {
-   background-image: url(../images/background-blogs.png);
+   background-image: url(../images/Background\ -\ Blogs.png);
 }
 
 .contact {
@@ -44,6 +44,6 @@
 /* * LARGE * */
 @media only screen and (min-width: 1607px) {
    .contact {
-      background-image: url(../images/background-contact.png)
+      background-image: url(../images/Background\ -\ Contact.png)
    }
 }
